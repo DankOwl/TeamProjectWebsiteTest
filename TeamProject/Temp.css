@@ -1,0 +1,67 @@
+@charset "utf-8";
+/* CSS Document */
+body{
+    background-color: burlywood;
+    font-family: arial, Helvetica, sans-serif;
+}
+header{
+    width: auto;
+    color: white;
+    text-shadow: 1px 1px 2px black, 0 0 25px orange, 0 0 5px darkorange;
+    text-align: center;
+    padding-bottom: 1%;
+}
+
+h1{
+    font-size: 3em;
+    color: dodgerblue;
+}
+
+h2{
+    text-align: center;
+    font-size: 2em;
+}
+
+ul{
+    list-style-type: none;
+    margin: 0%;
+    padding: 0%;
+    overflow: hidden;
+    border: 1px solid #5C5252;
+    background-color: steelblue;
+}
+
+li{
+    float: left;
+    border-right: 1px solid gray;
+}
+
+li a{
+    text-align-all: center;
+    display: block;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-weight: bold;
+    color: white;
+}
+
+li a:hover:not(.activePage){
+    background-color: darkorange;
+    color: black;
+}
+
+.activePage{
+    background-color: orangered;
+    color:black;
+}
+ul{
+    background-color: darkorange;
+}
+li a:hover:not(.activePage){
+    background-color: orangered;
+    color: black;
+}
+.activePage{
+    background-color: orangered;
+    color:black;
+}
