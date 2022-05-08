@@ -5,7 +5,7 @@
     <title>Social Media Page</title>
     <link href="Temp.css" rel="stylesheet" type="text/css" />
     <header><h1>Cover Art Planet</h1></header>
-    <h2>Contact Us</h2>
+    <h2>Social Media Page </h2>
 </head>
 <body>
 <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
@@ -24,7 +24,7 @@
         </ul>
     </nav>
 </div>
-<p>Contact Us here</p>
+<h3>Need to get in touch? Contact Us here using the form below and you will receive a response within 24hours </h3>
 
 <a href= "http://www.facebook.com" target="_blank">  
 <Img Src="images/facebook.png" width= "50 px"></a>  
@@ -35,25 +35,34 @@
 <a href= "http://www.twitter.com" target="_blank">  
 <Img Src="images/twitter.png" width= "50 px"></a>  
 
-<form action="socialmedia.php" method="post">
-  <div class="Social-form">
+<form action="socialmedia.php" method="post" > <!-- Creates form and sends outcome to socialmedia.php page -->
+  <div class="Social-form"> <!-- creates div tag -->
     <label for="name">Enter your name</label>
-    <input type="text" id="name" name="full_name" placeholder="Darren O'Reilly" pattern=[A-Z\sa-z]{3,20} required>
-  </div>
-  <div class="Social-form">
+    <input type="text" id="name" name="full_name" placeholder="Darren O'Reilly" pattern=[A-Z\sa-z]{3,20} > <!-- required tag is user validation to ensure it must be filled to proceed 
+	while pattern tag ensures that only specifc characters can be entered in this field -->
+  </div> <!-- closes div tag -->
+  <div class="Social-form"> <!-- creates div tag -->
     <label for="email">Enter your E-mail</label>
-    <input type="email" id="email" name="user_email" placeholder="w19014219@northumbria.ac.uk" required>
+    <input type="email" id="email" name="user_email" placeholder="w19014219@northumbria.ac.uk" > <!-- required tag is user validation to ensure it must be filled to proceed -->
+  </div> <!-- closes div tag -->
+  <div class="Social-form">
+    <label for="type">Choose problem</label>
+    <select id="type" name="type" >
+        <option value="">Select a problem</option>
+        <option value="general">General Help</option>
+        <option value="purchase">Purchasing Issues</option>
+    </select>
   </div>
   <div class="Social-form">
-    <label for="title">Reason For Contact:</label>
-    <input type="text" id="title" name="email_title" required placeholder="Unable to purchase goods" pattern=[A-Za-z0-9\s]{8,60}>
+    <label for="title">Reason For Contacting</label>
+    <input type="text" id="title" name="email_response"  placeholder="Can't purchase items" pattern=[A-Za-z0-9\s]{8,60}>
   </div>
-  <div class="Social-form">
+  <div class="Social-form"> <!-- creates div tag -->
     <label for="message">Enter message</label>
-    <textarea id="message" name="user_message" placeholder="Message?" required></textarea>
-  </div>
-  <button type="submit">Submit</button>
-</form>
+    <textarea id="message" name="user_message" placeholder="Message?" required></textarea> <!-- required tag is client side user validation to ensure it must be filled to proceed -->
+  </div> <!-- closes div tag -->
+  <button type="submit">Submit</button> <!-- submits the form to the php page -->
+</form> <!-- closes form -->
 
 
 
