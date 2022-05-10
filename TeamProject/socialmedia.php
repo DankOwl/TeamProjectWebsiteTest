@@ -1,7 +1,7 @@
 
 <?php
    
-   $dbConn = new mysqli('localhost', 'unn_w19014219', 'Nerrad00', 'unn_w19014219');
+   $dbConn = new mysqli('localhost', 'unn_w16014095', 'Rebecca0305', 'unn_w16014095');
           
         // Check connection
         if($dbConn === false){ //check that if it fails to connect outputs this message
@@ -32,7 +32,7 @@
    
 	if(mysqli_query($dbConn, $sql)){
             echo "Response stored in a database successfully."; 
-            echo '<p>Return to previous page <a href="socialmedia.html">Click here</a></p>';  
+            echo '<p>Return to previous page <a href="contactus.html">Click here</a></p>';  
 		 //echo outputs a message
 		echo nl2br("\n$full_name\n $user_email\n "
                 . "$type\n $user_message\n $email_response");

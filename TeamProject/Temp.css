@@ -65,3 +65,69 @@ li a:hover:not(.activePage){
     background-color: orangered;
     color:black;
 }
+
+.twitter {
+	color: blue;
+	transition: color 0.3s;
+	text-decoration: none;
+	margin: 0 15px;
+}
+
+.twitter:hover {
+	color: red;
+	
+}
+
+.facebook {
+	color: blue;
+	transition: color 0.3s;
+	text-decoration: none;
+	margin: 0 15px;
+}
+
+.facebook:hover {
+	color: green;
+	
+}
+
+
+div.Social-form {
+	
+}
+
+label {
+  display: block;
+  font-family: 'Aleo';
+  padding-bottom: 4px;
+  font-size: 1.25em;
+}
+
+input, select, textarea {
+  border-radius: 2px;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+  font-size: 1.25em;
+  font-family: 'Aleo';
+  width: 500px;
+  padding: 8px;
+}
+
+textarea {
+  height: 250px;
+}
+
+button {
+  height: 50px;
+  background: blue;
+  color: white;
+  border: 2px solid darkgreen;
+  font-size: 1.25em;
+  font-family: 'Aleo';
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button:hover {
+  border: 2px solid black;
+}
+
